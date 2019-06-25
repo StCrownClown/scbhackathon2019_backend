@@ -1,0 +1,12 @@
+﻿version: '2'
+services:
+  hacker2019_bester:
+    container_name: hacker2019_bester
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8080:80"
+    entrypoint:
+      - dotnet 
+      - hacker2019_bester.dll
